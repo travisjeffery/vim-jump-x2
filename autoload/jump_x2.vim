@@ -84,17 +84,15 @@ function! s:_jumplist()
   let back = 0
   let forward = 0
 
-  if len(ids) > 0
-    for i in range(1, len(ids) - 1)
-      let diff = ids[i - 1] - ids[i]
-      if 0 <= diff
-        let back += 1
-      endif
-      if diff <= 0
-        let forward += 1
-      endif
-    endfor
-  endif
+  for i in range(1, len(ids) - 1)
+    let diff = ids[i - 1] - ids[i]
+    if 0 <= diff
+      let back += 1
+    endif
+    if diff <= 0
+      let forward += 1
+    endif
+  endfor
 
   if back == 0
     let forward += 1
