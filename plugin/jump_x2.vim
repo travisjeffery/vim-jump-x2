@@ -7,7 +7,4 @@ nnoremap <silent> <Plug>(jump-x2-to-last) :<C-u>call jump_x2#to_last()<Return>
 nnoremap <silent> <Plug>(jump-x2-to-first) :<C-u>call jump_x2#to_first()<Return>
 nnoremap <silent> <Plug>(jump-x2-to-previous) :<C-u>call jump_x2#to_previous()<Return>
 
-nmap [` <Plug>(jump-x2-to-previous)
-nmap ]` <Plug>(jump-x2-to-next)
-
 let g:loaded_jump_x2 = 1
